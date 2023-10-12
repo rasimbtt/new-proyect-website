@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #E5B7B5;
+    --yellow: #e5deb5;
+    --fiolet: #6B4075;
+    --pembe: #DC6CA8;
+}
+
+body {
+    background-color: var(--main);
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+}
+
+.box1 {
+    background-color: white;
+    width: 295.6px;
+    height: 385.58px;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 0px 0px 20px 20px;
+    border-top: var(--fiolet) solid 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.box1 h2 {
+    font-size: 50px;
+    color: var(--pembe);
+}
+
+.box1 h4 {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 4px;
+}
+
+.box1 p {
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.box3 {
+    color: var(--fiolet);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box4 {
+    color: white;
+}
+
+.box3 h1 {
+    font-size: 60px;
+}
+
+.LeftSec {
+    width: 750px;
+}
+
+.box3 p {
+    line-height: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+button {
+    background-color: var(--pembe);
+    color: white;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: #59427a;
+    border: none;
+}
+
+.RightSec {
+    background-color: var(--fiolet);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    width: 456px;
+    border-radius: 30px;
+    padding: 60px 30px 30px;
+
+}
+
+.rightBox {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    line-height: 25px;
+}
+
+@media(max-width:1150px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .box3 {
+        text-align: center;
+    }
+
+    .RightSec {
+        width: 90%;
+    }
+
+    .box1 {
+        width: 350px;
+    }
+
+}
+
+@media(max-width:750px) {
+    .box {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .box1{
+        width: 100%;
+    }
+}
